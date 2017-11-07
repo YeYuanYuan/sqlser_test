@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="lottery@118.178.59.70">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.4">
+    <root id="1">
+      <ServerType>standalone</ServerType>
+    </root>
+    <database id="2" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="4" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="5" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="6" parent="1" name="AF">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="7" parent="1" name="UMS">
+      <ObjectId>6</ObjectId>
+    </database>
+    <database id="8" parent="1" name="UMS_Beta">
+      <ObjectId>7</ObjectId>
+    </database>
+    <database id="9" parent="1" name="MagicTag">
+      <ObjectId>8</ObjectId>
+    </database>
+    <database id="10" parent="1" name="ClinicMS">
+      <ObjectId>9</ObjectId>
+    </database>
+    <database id="11" parent="1" name="ClinicMS_Official">
+      <ObjectId>10</ObjectId>
+    </database>
+    <database id="12" parent="1" name="i_THEONE">
+      <ObjectId>11</ObjectId>
+    </database>
+    <database id="13" parent="1" name="MrLinHui">
+      <ObjectId>12</ObjectId>
+    </database>
+    <database id="14" parent="1" name="Common">
+      <ObjectId>13</ObjectId>
+    </database>
+    <database id="15" parent="1" name="lottery">
+      <ObjectId>14</ObjectId>
+      <Current>1</Current>
+    </database>
+    <schema id="16" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2017-11-07.14:17:12.403</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="17" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="20" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="21" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="22" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="23" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="24" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="25" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="26" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="27" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="28" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="29" parent="16" name="account ">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2017-11-07.13:52:47.840</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:52:47.860</ModifiedTimestamp>
+    </table>
+    <table id="30" parent="16" name="collection ">
+      <ObjectId>245575913</ObjectId>
+      <CreatedTimestamp>2017-11-07.13:45:39.480</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:45:39.497</ModifiedTimestamp>
+    </table>
+    <table id="31" parent="16" name="tb_account">
+      <ObjectId>885578193</ObjectId>
+      <CreatedTimestamp>2017-11-07.13:54:45.357</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:54:45.357</ModifiedTimestamp>
+    </table>
+    <column id="32" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="33" parent="29" name="account">
+      <Position>2</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="29" name="pwd">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="35" parent="29" name="phone">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+    </column>
+    <column id="36" parent="29" name="create_time">
+      <Position>5</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="29" name="column_6">
+      <Position>6</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <index id="38" parent="29" name="PK__account __3213E83F9D526E50">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="39" parent="29" name="account _account_uindex">
+      <Position>2</Position>
+      <ColNames>account</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="40" parent="29" name="account _phone_uindex">
+      <Position>3</Position>
+      <ColNames>phone</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="29" name="PK__account __3213E83F9D526E50">
+      <ObjectId>581577110</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-07.13:52:47.857</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:52:47.857</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__account __3213E83F9D526E50</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="30" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="30" name="collection_name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="30" name="create_time">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="30" name="remark">
+      <Position>4</Position>
+      <DataType>text|0</DataType>
+    </column>
+    <index id="46" parent="30" name="PK__collecti__3213E83FA5FA54A1">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="47" parent="30" name="collection _collection_name_uindex">
+      <Position>2</Position>
+      <ColNames>collection_name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="30" name="PK__collecti__3213E83FA5FA54A1">
+      <ObjectId>261575970</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-07.13:45:39.497</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:45:39.497</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__collecti__3213E83FA5FA54A1</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="49" parent="31" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="31" name="account">
+      <Position>2</Position>
+      <DataType>varchar(15)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="31" name="pwd">
+      <Position>3</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="52" parent="31" name="phone">
+      <Position>4</Position>
+      <DataType>varchar(11)|0</DataType>
+    </column>
+    <column id="53" parent="31" name="create_time">
+      <Position>5</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="54" parent="31" name="column_6">
+      <Position>6</Position>
+      <DataType>int|0</DataType>
+    </column>
+    <index id="55" parent="31" name="PK__tb_accou__3213E83F78D93E8A">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="56" parent="31" name="PK__tb_accou__3213E83F78D93E8A">
+      <ObjectId>901578250</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-11-07.13:54:45.357</CreatedTimestamp>
+      <ModifiedTimestamp>2017-11-07.13:54:45.357</ModifiedTimestamp>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>PK__tb_accou__3213E83F78D93E8A</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
